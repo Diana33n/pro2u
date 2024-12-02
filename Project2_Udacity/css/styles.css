@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    color: #fff;
+    background-color: #333;
+    padding-top: 80px; /* Adjusted to account for the fixed navbar */
+}
+
+/* Header and Nav Styles */
+.page_header {
+    position: fixed; /* Fixed the navbar at the top */
+    top: 0;
+    width: 100%;
+    background: #222222;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1001; /* Ensure it's above other content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+section {
+    padding: 180px;
+    margin: 35px;
+    background: #444;
+    border-radius: 8px;
+}
+
+.landing__container {
+    padding: 30px;
+    border-left: 4px solid teal;
+}
+
+/* Section Header Styles */
+section h2 {
+    color: #fff; /* Ensures section headers are white */
+}
+
+/* Footer Styles */
+.page_footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #006a7c;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Active state styling */
+.your-active-class {
+    background-color: #325c78; /* Highlight active section */
+    color: #fff;
+}
+
+.active {
+    font-weight: bold; /* Make active navbar item bold */
+    text-decoration: underline;
+}
+
+/* Scroll to Top Button Styles */
+#scrollTopBtn {
+    background-color: #4da0d7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #005b99;
+}
